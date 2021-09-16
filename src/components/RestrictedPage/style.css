@@ -1,0 +1,48 @@
+button {
+    width: 200px;
+    height: 40px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-style: solid;
+    box-shadow: 0 5px 2px gray;
+  }
+  
+  button:active {
+    box-shadow: 0 2px 2px gray;
+    transform: translateY(3px);
+    filter: brightness(1.2);
+  }
+  
+  button.login {
+    background: rgb(0, 151, 0);
+    color: whitesmoke;
+  }
+  
+  button.logout {
+    background: rgb(212, 60, 0);
+    color: white;
+  }
+  
+  @keyframes anim_drop {
+    from {
+      transform: translateY(-50px);
+    }
+  }
+  
+  .welcome_user {
+    animation: anim_drop .5s 1 ease-in-out;
+  }
+  
+  @keyframes anim_restrict {
+    0% {
+      opacity: 0;
+      transform: scale(0.5);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  
+  .restrict_page {
+    animation: anim_restrict .5s 1 ease-in-out;
+  }
